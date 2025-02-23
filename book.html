@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <h2>Bookstore Inventory</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Price ($)</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+       
+        </tbody>
+    </table>
+
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                displayBooks(this);
+            }
+        };
+        xhttp.open("GET", "books.xml", true);
+        xhttp.send();
+
+        function displayBooks(xml) {
+            var xmlDoc = xml.responseXML;
+            var books = xmlDoc.getElementsByTagName("book");
+            var tableContent = "";
+
+            for (var i = 0; i < books.length; i++) {
+                var category = books[i].getAttribute("category");
+                var title = books[i].getElementsByTagName("title")[0].textContent;
+                var author = books[i].getElementsByTagName("author")[0].textContent;
+                var year = books[i].getElementsByTagName("year")[0].textContent;
+                var price = books[i].getElementsByTagName("price")[0].textContent;
+
+                tableContent += "<tr>" +
+                    "<td>" + category + "</td>" +
+                    "<td>" + title + "</td>" +
+                    "<td>" + author + "</td>" +
+                    "<td>" + year + "</td>" +
+                    "<td>" + price + "</td>" +
+                "</tr>";
+            }
+
+            document.getElementById("book-list").innerHTML = tableContent;
+        }
+    </script>
+
+</body>
+</html>
