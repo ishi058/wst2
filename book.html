@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookstore Inventory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7A8C4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: white;
+            background-color: #F37199;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #F37199;
+        }
+
+        th {
+            background-color: #F37199;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #F7A8C4;
+            transition: 0.3s;
+        }
+    </style>
 </head>
 <body>
 
     <h2>Bookstore Inventory</h2>
 
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>Category</th>
@@ -25,7 +68,7 @@
     </table>
 
     <script>
-        fetch("book.xml")  // Make sure the file name is correct
+        fetch("book.xml")  
             .then(response => response.text())
             .then(data => {
                 let parser = new DOMParser();
@@ -57,3 +100,4 @@
 
 </body>
 </html>
+
