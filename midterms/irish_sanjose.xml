@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryUsers>
+    <user>
+        <name>Lewis Hamilton</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Toto Wolff</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>lewis.jpg</picture>
+    </user>
+    <user>
+        <name>Max Verstappen</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Christian Horner</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>max.jpg</picture>
+    </user>
+    <user>
+        <name>Charles Leclerc</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Mattia Binotto</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>leclerc.jpg</picture>
+    </user>
+    <user>
+        <name>Sergio Perez</name>
+        <course>BSCS</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Christian Horner</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>perez.jpg</picture>
+    </user>
+    <user>
+        <name>George Russell</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Toto Wolff</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>russell.jpg</picture>
+    </user>
+    <user>
+        <name>Fernando Alonso</name>
+        <course>BSCE</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Otmar Szafnauer</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>alonso.jpg</picture>
+    </user>
+    <user>
+        <name>Carlos Sainz</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Mattia Binotto</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>sainz.jpg</picture>
+    </user>
+    <user>
+        <name>Lando Norris</name>
+        <course>BSBA</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Andreas Seidl</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>norris.jpg</picture>
+    </user>
+    <user>
+        <name>Esteban Ocon</name>
+        <course>BSCS</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Luca de Meo</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>ocon.jpg</picture>
+    </user>
+    <user>
+        <name>Valtteri Bottas</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG1</yearLevelSection>
+        <adviser>Frederic Vasseur</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <picture>bottas.jpg</picture>
+    </user>
+</libraryUsers>
