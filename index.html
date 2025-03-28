@@ -99,7 +99,7 @@ let slideIndex = 0;
 
 function fetchImages() {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', './image.xml', true);
+    xhr.open('GET', './pic.xml', true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let xmlDoc = xhr.responseXML;
